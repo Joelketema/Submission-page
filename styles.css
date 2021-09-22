@@ -1,0 +1,366 @@
+:root{
+
+    --primary-color: #047aed;
+  }
+.container
+{
+    
+    border: 1px solid black;
+    background: linear-gradient(12deg, var(--primary-color), #03407c);
+    border-radius: 10px;
+    width: 1350px;
+    height: 320px;
+    box-shadow: 5px 30px 10px rgb(158, 178, 233);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    border: 0;
+    transition: all ease 200ms;
+}
+a:active
+{
+    color:rgb(0, 0, 0);
+}
+.aastu
+{
+margin-top: -210px;
+margin-left: 1070px;
+height: 100px;
+width: 200px;
+
+
+}
+img{
+    width: 165px;
+    border: 1px var(--primary-color) solid;
+    box-shadow: 2px 2px 3px white;
+    cursor: pointer;
+    color: #03407c;
+    border-radius: 15px;
+
+}
+
+img:hover{
+    animation-name: animate;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    box-shadow: 2px 2px 3px aqua;
+}
+#btn
+{
+    
+    margin-top: 180px;
+    margin-left: 600px;
+    margin-bottom: 50px;
+    padding: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 2px var(--primary-color) solid;
+    cursor: pointer;
+    border-radius: 5px;
+    background: var(--primary-color);
+    transition: all ease 100ms;
+   -webkit-transition: all ease 250ms;
+   -moz-transition: all ease 250ms;
+    color:white;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+#btn:hover
+{
+
+    border: 2px #fff solid;
+    box-shadow: 1px 7px 4px black;
+    animation-name: animate;
+    animation-duration: 1000ms;
+    animation-timing-function: ease;
+
+}
+
+
+h3{
+
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid white;
+    width: 120px;
+    margin-left:100px;
+    font-weight: bolder;
+    background-color: transparent;
+    color:white;
+    text-shadow: 1px 2px 2px rgb(6, 46, 46);
+    box-shadow: 1px 2px 2px aqua;
+    position: relative;
+    
+    
+}
+
+p{
+
+    
+    width:390px;
+    margin-left: 35px;
+    padding: 20px;
+    color: white;
+   
+}
+
+#idea{
+    box-shadow: 1px 2px 3px aqua;
+    text-shadow: 1px 2px 2px rgb(5, 39, 39);
+    color:white;
+}
+.nav
+{
+    margin-top: -185px;
+    margin-right: 20px;
+    position:sticky;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+#b1,#b2,#b3
+{
+    position: relative;
+    
+    background-color: transparent;
+    border:0;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+#b1,#b2
+{
+    margin-right: 7px;
+}
+
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2s;        /* Change to speed up or slow down */
+    animation-iteration-count:infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+    color: rgb(180, 126, 43);
+    text-shadow: 1px 2px 2px black;
+    cursor: pointer;
+  }
+.wave:hover
+{
+    animation-name: animation;
+    animation-duration: 2s;
+}
+
+
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(24.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(24.0deg) }
+     40% { transform: rotate(-8.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
+  @keyframes animation{
+      0%{transform: scale(1)}
+      10% { transform: scale(1.1)}  /* The following five values can be played with to make the waving more or less extreme */
+      20% { transform: scale(1.3) }
+      30% { transform: scale(1.5) }
+      40% { transform: scale(1.8) }
+      50% { transform: scale(1.9) }
+      60% { transform: scale(2.0) }  /* Reset for the last half to pause */
+     100% { transform: scale(1) }
+      
+  }
+  
+
+.menu:hover{
+    text-shadow: 1px 1px 1px rgb(61, 60, 57);
+  
+ 
+}
+
+
+@media only screen and (max-width: 499px)
+{
+  
+    .container
+    {
+        max-width: 380px;
+        height: 350px;
+        margin-left: 10px;
+        padding-top: 10px;
+        border-radius: 10px;
+       
+    
+    }
+    .nav{
+       
+        flex-direction: column;
+      
+        width: 15%;
+        margin-bottom: 70px;
+        margin-right: 10px;
+        margin-left: 290px;
+    }
+    #b1,#b2,#b3
+    {
+        padding: 3px;
+        font-size: 10px;
+        border-bottom: 0.5px rgb(177, 166, 166) solid;
+        margin-bottom: 2px;
+        border-radius: 5px;
+        
+    }
+    #b1{
+        margin-top: -20px;
+        margin-bottom: 5px;
+
+    }
+    #b2{
+  
+        margin-bottom: 8px;
+
+    }
+
+    h3 {
+       font-size: large;
+       padding: 12px;
+       margin-bottom: 50px;
+       border-radius: 15px;
+
+    }
+    p{
+        width: 250px;
+        margin-top: 30px;
+        margin-left: 30px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+
+    #btn
+    {
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+
+    #btn:hover
+    {
+    
+        box-shadow: 7px 4px 3px black;
+        background: linear-gradient(14deg, rgb(20, 83, 179), rgb(11, 44, 94));
+        transform: scale(1.01);
+
+    }
+    #notify
+    {
+        width:10px;
+        margin-left: 0;
+        font-size: 11px;
+    }
+    img {
+        display: none;
+    }
+}
+@media only screen and (min-width: 500px)
+{
+    .container
+    {
+        width: 650px;
+    }
+
+    #btn
+    {
+        margin-left: 200px;
+    }
+  
+}
+@media only screen and (min-width : 710px)
+{
+    .container
+    {
+        width:800px;
+    }
+
+    #btn
+    {
+        margin-left: 250px;
+    }
+}
+
+@media only screen and (min-width : 1000px)
+{
+    .container
+    {
+        width: 1000px;
+    }
+
+    #btn
+    {
+        margin-left: 400px;
+    }
+ 
+}
+
+
+@media only screen and (min-width : 1200px)
+{
+    .container
+    {
+        width: 1350px;
+    }
+
+    #btn
+    {
+        margin-left: 600px;
+    }
+}
+
+@keyframes animate
+{
+    0%{
+        transform: scale(1);
+       
+    }
+
+    50%{
+        
+        transform:scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+#b1:after,#b2:after,#b3:after
+{    
+    content: ""; /*underline content*/
+    display: block; /*display it in block style*/
+    height: 2px;
+    border-radius: 15px;
+    left: 50%;  /*from the left*/
+    position: absolute;
+    background: aqua;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    margin-left: 7px;
+}
+#b1:hover:after,#b2:hover:after,#b3:hover:after { 
+    width:85%; 
+    left: 0; 
+  }
+
+.menu:hover{
+    color: aqua;
+}
